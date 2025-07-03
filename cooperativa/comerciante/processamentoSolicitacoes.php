@@ -9,7 +9,7 @@ if (!isset($_SESSION['usuario_id']) || $_SESSION['usuario_tipo'] !== 'comerciant
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $acao = $_GET['acao'] ?? '';
-    $vinculo_id = $_GET['vinculo_id'] ?? '';
+    $vinculo_id = $_GET['id'] ?? '';
 
     if (empty($acao) || empty($vinculo_id)) {
         echo "Parâmetros inválidos.";
